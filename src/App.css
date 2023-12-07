@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 62.5%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.main-div {
   min-height: 100vh;
+  background: #060822;
+  display: flex;
+  justify-content: center;
+}
+.child-div {
+  text-align: center;
+  margin-top: 12rem;
+}
+.child-div .icon i {
+  font-size: 6rem;
+}
+.child-div h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.child-div .addItem input {
+  width: 320px;
+  font-size: 18px;
+  border-radius: 4px;
+  border: 1px solid #060822;
+}
+.child-div .addItem .plus-icon {
+  font-size: 18px;
+  color: #242424;
+  margin-left: -28px;
+  cursor: pointer;
+}
+.child-div .addItem .plus-icon:hover {
+  color: green;
+}
+
+.showItem {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ 
+}
+.eachItem {
+  color: black;
+  border-radius: 25px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  padding: 8px 10px;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.eachItem .delete-icon {
+  position: absolute;
+  right: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.eachItem .edit-icon{
+  position: absolute;
+  right: 36px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.remove-all button {
+  padding: 8px 12px;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
